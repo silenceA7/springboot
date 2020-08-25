@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/template/
+    suffix: .html
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  type-aliases-package: com.afan.entity
+  mapper-locations: classpath:com/afan/mapper/*Mapper.xml
